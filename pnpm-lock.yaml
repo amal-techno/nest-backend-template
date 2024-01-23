@@ -30,8 +30,8 @@ dependencies:
     specifier: ^7.1.17
     version: 7.2.0(@fastify/static@6.12.0)(@nestjs/common@10.3.0)(@nestjs/core@10.3.0)(class-transformer@0.5.1)(class-validator@0.14.1)(reflect-metadata@0.1.14)
   '@ory/cli':
-    specifier: ^0.2.2
-    version: 0.2.2
+    specifier: ^0.3.1
+    version: 0.3.1
   '@ory/client':
     specifier: ^1.4.3
     version: 1.5.1
@@ -1916,8 +1916,8 @@ packages:
     dependencies:
       '@octokit/openapi-types': 19.1.0
 
-  /@ory/cli@0.2.2:
-    resolution: {integrity: sha512-8moAMui2rMofCygRSW3TRquOMCZhmw6M8s5mHjDQEHg075Kwp+Zdm5coOZZH3sbpV8QGqzK+uQBgsP7saB2R0Q==}
+  /@ory/cli@0.3.1:
+    resolution: {integrity: sha512-uJG+l/T86eSvAeZ+blYzVEdEjWpNmcdHKhvfkdrIm0OqdJr5LZle3oRWKMEdX6M/zcdOSRdmNiNUURxgJYavUA==}
     hasBin: true
     requiresBuild: true
     dependencies:
