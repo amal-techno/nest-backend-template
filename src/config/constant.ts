@@ -12,8 +12,7 @@ export const SCHEMA_NAME = 'lifeforce';
 
 // All the tables name
 export const ENTITY_NAMES = {
-    USER: 'user',
-    ROOM: 'room',
+    USER: 'user'
 };
 
 // List of all user status. Please change user entity enum value if modified here.

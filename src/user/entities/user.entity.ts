@@ -9,7 +9,7 @@ import {
 } from 'drizzle-orm/pg-core';
 import { InferInsertModel, InferSelectModel, relations } from 'drizzle-orm';
 import { ENTITY_NAMES, SCHEMA_NAME } from '../../config';
-import { livekitRoomEntity } from '../../livekit/entities';
+
 
 export const userSchema = pgSchema(SCHEMA_NAME);
 
@@ -44,9 +44,7 @@ export const userEntity = userSchema.table(
     },
 );
 
-export const userRelations = relations(userEntity, ({ many }) => ({
-    rooms: many(livekitRoomEntity),
-}));
+
 
 export type NewUser =
     | InferInsertModel<typeof userEntity>
