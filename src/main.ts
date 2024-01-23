@@ -5,7 +5,7 @@ import {
     NestFastifyApplication,
 } from '@nestjs/platform-fastify';
 import { AppModule } from './app.module';
-import { CLIENT_ORIGIN, CLIENT_PORT } from './config/constant';
+import { CLIENT_ORIGIN, CLIENT_PORT } from './constant';
 import { RequestMethod, ValidationPipe, VersioningType } from '@nestjs/common';
 import 'dotenv/config';
 
@@ -18,8 +18,7 @@ async function bootstrap() {
     app.enableCors({
         credentials: true,
         origin: [
-            `${CLIENT_ORIGIN}:${CLIENT_PORT}`,
-            new RegExp(`/^http://192.168.1.([1-9]|[1-9]):${CLIENT_PORT}$/`),
+            `${CLIENT_ORIGIN}:${CLIENT_PORT}`
         ],
     });
 

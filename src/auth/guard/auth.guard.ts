@@ -5,13 +5,11 @@ import {
     UnauthorizedException,
 } from '@nestjs/common';
 
-import { AuthService } from '../auth.service';
 import { OryService } from '../../ory/ory.service';
 
 @Injectable()
 export class AuthGuard implements CanActivate {
     constructor(
-        private authService: AuthService,
         private oryService: OryService,
     ) {}
 
@@ -32,13 +30,6 @@ export class AuthGuard implements CanActivate {
             if (orySession.active) {
                 request.headers['sessionData'] = orySession;
                 await this.oryService.extendSession(orySession);
-                const user = await this.authService.findOneUser(
-                    orySession.identity.id,
-                );
-                if (!user) {
-                    throw new UnauthorizedException();
-                }
-                request.headers['user'] = user;
                 return true;
             }
         } catch (err) {

@@ -8,7 +8,7 @@ export const CLIENT_PORT = process.env.CLIENT_PORT;
 export const DATABASE_URL = process.env.DATABASE_URL;
 
 // Database schema name
-export const SCHEMA_NAME = 'lifeforce';
+export const SCHEMA_NAME = '';
 
 // All the tables name
 export const ENTITY_NAMES = {
