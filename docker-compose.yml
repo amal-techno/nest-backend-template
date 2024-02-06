@@ -7,12 +7,6 @@ services:
         container_name: nest-backend-template
         environment:
             - NODE_ENV=development
-            - CLIENT_ORIGIN=http://localhost
-            - CLIENT_PORT=4005
-            - DATABASE_URL=postgres://postgres:postgres@postgres:5432/doctor_care
-            - ORY_PROJECT_SLUG=loving-curie-fi4rhv339e
-            - ORY_PROJECT_ID=34a182e7-5e06-4078-9c35-5dde3b0bacb1
-            - ORY_API_KEY=ory_pat_oXMyiEFdTN4YQfSBCClnUA3JVS7DN508
         networks:
             - dockernetwork
         depends_on:
