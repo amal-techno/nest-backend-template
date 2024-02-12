@@ -30,7 +30,7 @@
         "@nestjs/mapped-types": "*",
         "@nestjs/platform-fastify": "^10.3.0",
         "@nestjs/swagger": "^7.1.17",
-        "@ory/cli": "^0.2.2",
+        "@ory/cli": "^0.3.4",
         "@ory/client": "^1.4.3",
         "@semantic-release/exec": "^6.0.3",
         "@semantic-release/npm": "^11.0.2",
